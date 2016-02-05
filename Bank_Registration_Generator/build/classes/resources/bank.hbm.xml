@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.BankBeans" table="bankaccount" schema="system">
+		<id name="acno">
+			<generator class="beans.BankAccountGenerator"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="email"></property>
+		<property name="phone"></property>
+		<property name="balance"></property>
+	</class>
+
+</hibernate-mapping>
